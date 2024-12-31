@@ -11,7 +11,7 @@ services:
       LOG_LEVEL: "debug"
       CRON_SCHEDULE: "* * * * *"
 
-      #  yamllint disable-line rule:line-length
+      # yamllint disable-line rule:line-length
       DOMAINS: "openwindowschool-weatherbug-scrape:https://www.weatherbug.com/weather-camera/?cam=BLVPW,overlakeschool-weatherbug-scrape:https://www.weatherbug.com/weather-camera/?cam=RDVRL,anacortesfuelpump-wsdot-api:9818"
 
       # enable wsdot cameras api

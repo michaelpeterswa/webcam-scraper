@@ -138,7 +138,8 @@ func (s *Scraper) Run() {
 			s.Scrape(scrapePoint)
 		case CollectionTypeAPI:
 			s.API(scrapePoint)
-
+		case CollectionTypeDirect:
+			s.Direct(scrapePoint)
 		}
 	}
 }

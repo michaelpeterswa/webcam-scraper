@@ -12,7 +12,7 @@ services:
       CRON_SCHEDULE: "* * * * *"
 
       # yamllint disable-line rule:line-length
-      DOMAINS: "openwindowschool-weatherbug-scrape:https://www.weatherbug.com/weather-camera/?cam=BLVPW,overlakeschool-weatherbug-scrape:https://www.weatherbug.com/weather-camera/?cam=RDVRL,anacortesfuelpump-wsdot-api:9818"
+      DOMAINS: "openwindowschool-weatherbug-scrape:https://www.weatherbug.com/weather-camera/?cam=BLVPW,overlakeschool-weatherbug-scrape:https://www.weatherbug.com/weather-camera/?cam=RDVRL,sunmountain-sunmountainlodge-scrape:https://sunmountainlodge.com/webcam/"
 
       # enable wsdot cameras api
       WSDOT_API_KEY: ""

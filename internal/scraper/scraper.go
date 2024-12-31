@@ -23,9 +23,12 @@ type CollectionType int
 const (
 	PageTypeWeatherBug PageType = iota
 	PageTypeWSDOT
+	PageTypeSunMountainLodge
+	PageTypeDirect
 
 	CollectionTypeScrape CollectionType = iota
 	CollectionTypeAPI
+	CollectionTypeDirect
 )
 
 type ScrapePoint struct {
@@ -135,7 +138,8 @@ func (s *Scraper) Run() {
 			s.Scrape(scrapePoint)
 		case CollectionTypeAPI:
 			s.API(scrapePoint)
-
+		case CollectionTypeDirect:
+			s.Direct(scrapePoint)
 		}
 	}
 }

@@ -23,9 +23,12 @@ type CollectionType int
 const (
 	PageTypeWeatherBug PageType = iota
 	PageTypeWSDOT
+	PageTypeSunMountainLodge
+	PageTypeDirect
 
 	CollectionTypeScrape CollectionType = iota
 	CollectionTypeAPI
+	CollectionTypeDirect
 )
 
 type ScrapePoint struct {

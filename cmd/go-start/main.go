@@ -138,6 +138,10 @@ func mapToDomains(m map[string]string) []scraper.ScrapePoint {
 			translatedPageType = scraper.PageTypeWeatherBug
 		case "wsdot":
 			translatedPageType = scraper.PageTypeWSDOT
+		case "direct":
+			translatedPageType = scraper.PageTypeDirect
+		case "sunmountainlodge":
+			translatedPageType = scraper.PageTypeSunMountainLodge
 		default:
 			slog.Error("could not translate mode", slog.String("mode", mode))
 			continue
@@ -149,6 +153,8 @@ func mapToDomains(m map[string]string) []scraper.ScrapePoint {
 			translatedMode = scraper.CollectionTypeScrape
 		case "api":
 			translatedMode = scraper.CollectionTypeAPI
+		case "direct":
+			translatedMode = scraper.CollectionTypeDirect
 		default:
 			slog.Error("could not translate page type", slog.String("pageType", pageType))
 			continue
